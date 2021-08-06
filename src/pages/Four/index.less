@@ -1,0 +1,72 @@
+.page-box__four{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2.58rem 2.2rem 1rem 1.64rem;
+    grid-template-rows: 1.78rem 2.36rem 4.94rem 1.26rem 3rem;
+    grid-template-areas: 
+    "header . . ."
+    "title title title title"
+    "main . . . ."
+    "cook subtitle subtitle ."
+    "cook . footer-img footer-img";
+    .header{
+        grid-column-start: span 4;
+        img{
+            width: 4rem;
+            margin: .98rem .64rem 0;
+        }
+    }
+    .title{
+        grid-column-start: span 4;
+        
+        display: grid;
+        place-items: center center;
+        img{
+            width: 5.7rem;
+            
+        }
+    }
+    .main{
+        grid-column-start: span 4;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+        img{
+            width: 2.6rem;
+            margin: 0 5px;
+        }
+    }
+    .subtitle{
+        grid-column-start: span 3;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        animation: sliderRight ease-out 1s;
+        img{
+            width: 3.1rem;
+            
+        }
+    }
+    .cook{
+        grid-row-start: span 2;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        img{
+            width: 2.3rem;
+            margin-top: 1rem;
+        }
+    }
+    .footer-img{
+        grid-column-start: span 3;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-end;
+        img{
+            width: 2.2rem;
+            // margin-top: rem;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+.page-box__six{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 2.2rem 7.5rem 3.1rem;
+    grid-template-areas: 
+    "header" "main" "footer";
+    .header{
+        img{
+            width: 4rem;
+            margin: .98rem .64rem 0;
+        }
+    }
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .miniprogram-box{
+            background-color: #fff;
+            width: 73vw;
+            height: 100%;
+            border-radius: .2rem;
+            box-shadow: 0px 0px .2rem .02rem rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            // justify-content: center;
+            flex-direction: column;
+            padding: .25rem;
+            header{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 100%;
+                border-bottom: 1px #bbbbbb dashed;
+                padding-bottom: .1rem;
+                h6{
+                    font-size:.45rem;
+                    background-image: -webkit-linear-gradient(bottom, #fa8846, #fcac36);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    
+                }
+                p{
+                    font-size: .23rem;
+                    line-height: .7rem;
+                }
+
+            }
+            main{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+                height: 100%;
+                position: relative;
+                .code{
+                    width: 60%;
+                }
+                span{
+                    font-size: 18px;
+                }
+                .process{
+                    width: 90%;
+                }
+                button{
+                    background-color: #e77918;
+                    color: #fff;
+                    border: none;
+                    font-size: 12px;
+                    padding: 0 .7rem;
+                    line-height: .45rem;
+                    border-radius: .1rem;
+                }
+                .down-img{
+                    background: #e77918;
+                    color: #fff;
+                    font-size: 14px;
+                    padding: 2px 5px;
+                    border-radius: 5px;
+                    position: absolute;
+                    right: 0;
+                    top: 6px;
+                    
+                }
+            }
+            
+        }
+    }
+   
+    .footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 2.2rem;
+        }
+    }
+
+    
+}
+

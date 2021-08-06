@@ -1,0 +1,127 @@
+.page-box__five{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 2.46rem 6.04rem 1.4rem 3.44rem;
+    grid-template-columns: 2.94rem 4.96rem;
+    grid-template-areas: 
+    "header ." 
+    "form form" 
+    "cook btn" 
+    "cook footer";
+  
+
+    .header{
+        grid-column-start: span 2;
+        img{
+            width: 4rem;
+            margin: 0.98rem .4rem ;
+        }
+    }
+    .form{
+        grid-column-start: span 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        touch-action: none; 
+        .top{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+            .right{
+                width: 3.6rem;
+                height: 3.3rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                input{
+                    width: 3.5rem;
+                    height: .8rem;
+                    font-size: 15px;
+                    line-height: 40px;
+                    border: none;
+                    padding: 0 10px;
+                    box-sizing: border-box;
+                    touch-action: none; 
+                }
+                input[type="date"]{
+                    height: .8rem;
+                    appearance:none;
+                }
+                
+            }
+            
+            img{
+                width: 2.4rem;
+                margin-right: 10px;
+            }
+        }
+        .bottom{
+            display: flex;
+            flex-direction: column;
+            margin-top: .2rem;
+            input{
+                width: 5.9rem;
+                height: .8rem;
+                font-size: 15px;
+                line-height: 40px;
+                border: none;
+                padding: 0 10px;
+                box-sizing: border-box;
+                margin-bottom: .4rem;
+                display: flex;
+                align-items: center;
+            }
+            .za-cell{
+                margin-bottom: .4rem;
+                font-size: 18px;
+                height: .8rem;
+                touch-action: none;
+                overscroll-behavior: contain;
+                
+            }
+            .za-cell:after {
+                content: "";
+                display: none;
+            }
+            .za-cell__inner {
+                min-height: .8rem;
+                height: .8rem;
+            }
+             
+            
+        }
+    }
+    .btn{
+       img{
+            width: 3.5rem;
+       }
+    }
+     .cook{
+        grid-row-start: span 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 2.4rem;
+            margin-top: .6rem;
+            
+        }
+     }
+     .footer{
+         display: flex;
+         align-items: flex-start;
+         justify-content: flex-end;
+         img{
+             width: 2.6rem;
+             margin-right: .5rem;
+         }
+     }
+    
+    
+}
+
+.picker{
+    touch-action: none; 
+}

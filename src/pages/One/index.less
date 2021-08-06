@@ -1,0 +1,46 @@
+.page-box__one{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 2rem 5.48rem 1.58rem 4.3rem;
+    grid-template-areas: 
+    "header" "main" "hot" "footer";
+    .header{
+        img{
+            width: 4rem;
+            margin: .98rem .64rem 0;
+        }
+    }
+    .main{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: .5rem;
+        .tip{
+            width: .52rem;
+            animation: scale 2s ease;
+        }
+        .title{
+            width: 3.65rem;
+            // margin-right: .5rem;
+            animation: 1.8s ease  running rollInUp;
+        }
+    }
+    .hot{
+        img{
+            width: 6.34rem;
+            margin: 0 auto;
+            display: flex;
+        }
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 2.2rem;
+        }
+    }
+}
+

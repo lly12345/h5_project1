@@ -1,0 +1,32 @@
+* {  
+padding: 0;
+margin: 0;
+}
+
+html {
+  font-size: calc(100vw / 7.5);
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100% !important;
+}
+
+p,h2,h6{
+  margin: 0;
+  padding: 0;
+}
+ 
+.am-wingblank.am-wingblank-lg {
+  margin:0;
+}
+.za-date-picker{
+  touch-action: none;
+  overscroll-behavior: contain;
+}
+
+
+
+

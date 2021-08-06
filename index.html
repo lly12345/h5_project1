@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>大咖饭局</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.7.0/animate.min.css">
+  <script src="https://res2.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+  <script src="/URLquery.js"></script>
+  <script>
+    console.log('1.1.2');
+    if (getQuery('sid')) window.localStorage.setItem('sid', getQuery('sid'))
+    if (getQuery('token')) window.localStorage.setItem('token', getQuery('token'))
+    if (getQuery('token') || window.localStorage.getItem('token')) {
+      console.log('token');
+    } else {
+       window.location.href = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx569951161804e340&redirect_uri=https%3A%2F%2Fh5.fuzhouxiaoyu.com%2Fuser%2Fwx-login-code&response_type=code&scope=snsapi_userinfo&state=from:ydcj-dakafanju#wechat_redirect"
+    }
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
